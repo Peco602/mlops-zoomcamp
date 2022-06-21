@@ -8,6 +8,3 @@ COPY [ "Pipfile", "Pipfile.lock", "./" ]
 RUN pipenv install --system --deploy
 
 COPY [ "starter.py", "./" ]
-
-# docker build -t mlops-zoomcamp-deployment:latest .
-# docker run -t mlops-zoomcamp-deployment:latest ./starter.py 2021 4
