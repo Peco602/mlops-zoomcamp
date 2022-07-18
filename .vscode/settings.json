@@ -1,0 +1,9 @@
+{
+    "python.testing.pytestArgs": [
+        "06-best-practices/tests"
+    ],
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}
