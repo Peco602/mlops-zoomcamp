@@ -2,7 +2,7 @@ LOCAL_TAG:=$(shell date +"%Y-%m-%d-%H-%M")
 LOCAL_IMAGE_NAME:=batch-model-duration:${LOCAL_TAG}
 
 test:
-	pytest tests/
+	pytest tests/ -s
 
 quality_checks:
 	isort .

@@ -22,6 +22,12 @@ export S3_ENDPOINT="http://localhost:4566"
 
 pipenv run python integration_test.py
 
+# Check input file
+aws s3 ls s3://nyc-duration/in/ --endpoint-url=http://localhost:4566
+
+# Check output file
+aws s3 ls s3://nyc-duration/out/ --endpoint-url=http://localhost:4566
+
 ERROR_CODE=$?
 
 if [ ${ERROR_CODE} != 0 ]; then

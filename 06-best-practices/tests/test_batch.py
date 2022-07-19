@@ -28,6 +28,7 @@ def test_prepare_data():
 
     categorical = ["PUlocationID", "DOlocationID"]
     output_df = batch.prepare_data(input_df, categorical)
+    print(output_df)
 
     expected_data = [
         ("-1", "-1", dt(1, 2), dt(1, 10), 8.0),
